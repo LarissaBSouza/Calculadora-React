@@ -10,4 +10,37 @@
     border-right: var(--border-button);
     border-bottom: var(--border-button);
     outline: none;
+    cursor: pointer;
 }
+
+.button:hover {
+    background-color: rgb(173, 172, 172);
+}
+
+.button:active {
+    background-color: #ccc;
+}
+
+.button.operacao {
+    background-color: #fa8231;
+    color: #fff;
+
+}
+
+.button.double {
+    grid-column: span 2;
+}
+
+.button.triple {
+    grid-column: span 3;
+}
+
+.button.operacao:active {
+    background-color: #fa8131cc;
+    color: #fff;
+}
+
+.button.operacao:hover {
+    background-color: #d66a22d5;
+}
+

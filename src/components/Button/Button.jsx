@@ -2,10 +2,16 @@ import './Button.css'
 
 function Button(props) {
 
+    let classes = 'button '
+    classes += props.operacao ? 'operacao' : ''
+    classes += props.double ? 'double' : ''
+    classes += props.triple ? 'triple' : ''
+    
     return (
-        <button className="button" onClick={() => {
-            props.click(props.label)
-        }}>
+        <button className={classes} onClick={() => {
+            props.click && props.click(props.label)
+            props.clear && props.clear()
+            } }>
             {props.label}
         </button>
     )
