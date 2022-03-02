@@ -1,9 +1,12 @@
 import './App.css';
 
+import Calculadora from './main/Calculadora'
+
 function App() {
   return (
     <div>
-      Calculadora
+      <h1>Calculadora</h1>
+      <Calculadora />
     </div>
   );
 }
